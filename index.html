@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="樂高迷你人偶設計師" />
+    <meta property="og:description" content="迷你人偶是常見於樂高世界的細小塑膠人偶。大部份樂高玩具都附有迷你人偶，有些專為收藏家而出的產品甚至只含有迷你人偶。" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/lego-minifigure-creator.css">
+    <title>樂高迷你人偶設計師</title>
+</head>
+<body>
+    <div class="minifigure">
+        <div class="head">
+            <div class="faces-wrap">
+                <div class="faces">
+                    <div class="face classic">
+                        <div class="eye right"></div>
+                        <div class="eye left"></div>
+                        <div class="mouth"></div>
+                    </div>
+
+                    <div class="face smile">
+                        <div class="eye right">
+                            <div class="brow"></div>
+                        </div>
+                        <div class="eye left">
+                            <div class="brow"></div>
+                        </div>
+                        <div class="mouth"></div>
+                    </div>
+
+                    <div class="face large-smile">
+                        <div class="eye right">
+                            <div class="brow"></div>
+                        </div>
+                        <div class="eye left">
+                            <div class="brow"></div>
+                        </div>
+                        <div class="mouth"></div>
+                    </div>
+
+                    <div class="face worried">
+                        <div class="eye right">
+                            <div class="brow"></div>
+                        </div>
+                        <div class="eye left">
+                            <div class="brow"></div>
+                        </div>
+                        <div class="mouth"></div>
+                    </div>
+
+                    <div class="face frown">
+                        <div class="eye right">
+                            <div class="brow"></div>
+                        </div>
+                        <div class="eye left">
+                            <div class="brow"></div>
+                        </div>
+                        <div class="mouth"></div>
+                    </div>
+
+                    <div class="face surprised">
+                        <div class="eye right">
+                            <div class="brow"></div>
+                        </div>
+                        <div class="eye left">
+                            <div class="brow"></div>
+                        </div>
+                        <div class="mouth"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upper-body">
+            <div class="torso"></div>
+            <div class="arm right">
+                <div class="hand right"></div>
+            </div>
+            <div class="arm left">
+                <div class="hand left"></div>
+            </div>
+        </div>
+        <div class="lower-body">
+            <div class="waist"></div>
+            <div class="crotch"></div>
+            <div class="leg right"></div>
+            <div class="leg left"></div>
+        </div>
+    </div>
+    <div class="controls">
+        <h2 class="title">控制</h2>
+        <button class="button explode">拆解</button>
+        <button class="button randomize">隨機化</button>
+
+        <fieldset class="head-expression">
+            <legend>頭部</legend>
+            <div class="form-element">
+                <label for="expression">表情</label>
+                <input id="expression" class="expression-range expression" name="expression" type="range" min="0" max="500" step="100" value="0">
+            </div>
+        </fieldset>
+        <fieldset class="upper-color">
+            <legend>上半身</legend>
+            <div class="form-element">
+                <label for="upper-hue">色相</label>
+                <input id="upper-hue" class="color-range upper-hue" name="upper-hue" type="range" min="0" max="360" value="200">
+            </div>
+            <div class="form-element">
+                <label for="upper-saturation">飽和度</label>
+                <input id="upper-saturation" class="color-range upper-saturation" name="upper-saturation" type="range" min="0" max="100" value="0">
+            </div>
+            <div class="form-element">
+                <label for="upper-lightness">亮度</label>
+                <input id="upper-lightness" class="color-range upper-lightness" name="upper-lightness" type="range" min="0" max="90" value="90">
+            </div>
+        </fieldset>
+        <fieldset class="lower-color">
+            <legend>下半身</legend>
+            <div class="form-element">
+                <label for="lower-hue">色相</label>
+                <input id="lower-hue" class="color-range lower-hue" name="lower-hue" type="range" min="0" max="360" value="200">
+            </div>
+            <div class="form-element">
+                <label for="lower-saturation">飽和度</label>
+                <input id="lower-saturation" class="color-range lower-saturation" name="lower-saturation" type="range" min="0" max="100" value="0">
+            </div>
+            <div class="form-element">
+                <label for="lower-lightness">亮度</label>
+                <input id="lower-lightness" class="color-range lower-lightness" name="lower-lightness" type="range" min="0" max="90" value="90">
+            </div>
+        </fieldset>
+    </div>
+    <script src="js/lego-minifigure-creator.js"></script>
+</body>
+</html>
